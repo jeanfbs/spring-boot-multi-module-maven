@@ -1,4 +1,4 @@
-package com.webDemo;
+package com.apiDemo.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -25,7 +25,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter{
     }
 
     @Bean
-    public InternalResourceViewResolver viewResolverWeb() {
+    public InternalResourceViewResolver viewResolverApi() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
         resolver.setPrefix(location);
         resolver.setSuffix(suffix);
