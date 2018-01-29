@@ -1,0 +1,6 @@
+#FileLock
+#Mon Jan 29 18:00:31 BRST 2018
+hostName=jeanfbs-linux
+id=1614381b4e6fc39ea579af8d993f5a795dfb8f2eddf
+method=file
+server=127.0.1.1\:38937

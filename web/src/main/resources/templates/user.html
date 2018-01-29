@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot Thymeleaf Hello World Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />
+</head>
+    <a href="/new" class="buttton">Novo Usuario</a>
+    <body>
+        <h1>Lista de Usuarios</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Login</th>
+                    <th>Senha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each=" user : ${listUsers}">
+                    <td th:text="${user.cdUser}"></td>
+                    <td th:text="${user.login}"></td>
+                    <td th:text="${user.senha}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
